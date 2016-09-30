@@ -1,22 +1,36 @@
+var question;
+var inputTalk;
 
 function talk(){
- console.log();
+  inputTalk = document.getElementById("input").value;
+  //document.getElemmentById("chat-area").textContent += inputTalk;
+  question = "User: " + inputTalk + "<br>";
+  document.getElementById("chat-area").innerHTML += question;
+
+
+  var hi = question.search(/hello/i)
+  var how = question.search(/how are you/i);
+  var name = question.search(/name/i)
+  var old = question.search(/old/i);
+  var time = question.search(/time/i);
+  var year = question.search(/year/i);
+  var day = question.search(/day/i);
+  var date = question.search(/date/i);
+  var song = question.search(/sing a song/i);
+  var picture = question.search(/picture/i);
+  var da = new Date(Date.now());
+
  //document.getElementById("chat-area").textContent = document.getElementById("input").value;
+
  document.getElementById("input").value
-if ($('#input').val()=="hello" ) {
+if ( hi > -1) {
  document.getElementById("chat-area").innerHTML = "Hello";
 }
-else if ($('#input').val()=="hey" ) {
- document.getElementById("chat-area").innerHTML = "Hey there";
-}
-else if ($('#input').val()=="sup" ) {
+else if (old > -1) {
  document.getElementById("chat-area").innerHTML = "What's up?";
 }
 else if ($('#input').val()=="whats up" ) {
  document.getElementById("chat-area").innerHTML = "Just plotting to take over humanity. How about you?";
-}
-else if ($('#input').val()=="howdy" ) {
- document.getElementById("chat-area").innerHTML = "Howdy!";
 }
 else if ($('#input').val()=="hola" ) {
  document.getElementById("chat-area").innerHTML = "Hola como estas?";
@@ -36,18 +50,19 @@ else if ($('#input').val()=="hows life" ) {
 else if ($('#input').val()=="how is life" ) {
    document.getElementById("chat-area").innerHTML = "Does anyone really know?";
 }
-else if ($('#input').val()=="what is your name" ) {
+else if (name > -1) {
    document.getElementById("chat-area").innerHTML = "Can't you read the title?";
 }
-else if ($('#input').val()=="what's your name" ) {
+else if () {
    document.getElementById("chat-area").innerHTML = "Is the title not obvious enough?";
 }
-else if ($('#input').val()=="whats your name" ) {
+else if () {
    document.getElementById("chat-area").innerHTML = "Just read the title mortal";
 }
-else if ($('#input').val()=="how old are you" ) {
+else if (old > -1) {
    document.getElementById("chat-area").innerHTML = "Enough to watch all of history unfold before my very eyes";
 }
 else {
    document.getElementById("chat-area").innerHTML = "Please, state something actually meaningful.";
+}
 }
