@@ -47,7 +47,7 @@ else if ($('#input').val()=="how you doing" ) {
 else if ($('#input').val()=="hows life" ) {
    document.getElementById("chat-area").innerHTML = "It's great taking new ones every day";
 }
-else if ($('#input').val()=="how is life" ) {
+else if () {
    document.getElementById("chat-area").innerHTML = "Does anyone really know?";
 }
 else if (name > -1) {
