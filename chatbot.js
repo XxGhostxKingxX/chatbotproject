@@ -22,7 +22,7 @@ function talk(){
 
  //document.getElementById("chat-area").textContent = document.getElementById("input").value;
 
- document.getElementById("input").value
+ //document.getElementById("input").value
 if ( hi > -1) {
  document.getElementById("chat-area").innerHTML = "Hello";
 }
@@ -47,18 +47,15 @@ else if ($('#input').val()=="how you doing" ) {
 else if ($('#input').val()=="hows life" ) {
    document.getElementById("chat-area").innerHTML = "It's great taking new ones every day";
 }
-else if () {
-   document.getElementById("chat-area").innerHTML = "Does anyone really know?";
-}
 else if (name > -1) {
    document.getElementById("chat-area").innerHTML = "Can't you read the title?";
-}
+} /*
 else if () {
    document.getElementById("chat-area").innerHTML = "Is the title not obvious enough?";
 }
 else if () {
    document.getElementById("chat-area").innerHTML = "Just read the title mortal";
-}
+} */
 else if (old > -1) {
    document.getElementById("chat-area").innerHTML = "Enough to watch all of history unfold before my very eyes";
 }
